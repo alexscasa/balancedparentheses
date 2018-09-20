@@ -1,6 +1,5 @@
 {
   "name": "balancedparentheses",
-  "homepage": "https://alexscasa.github.io/balancedparentheses/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
