@@ -43,20 +43,18 @@ class App extends Component {
           this.balancedMatch(line + '-' + string[i], '[', validate, errors);
         }
       }
-    })
+    });
 
-    validate.forEach((opener) => {
-      errors.push(opener);
-    })
+    errors = [...validate, ...errors];
 
     if(errors.length > 0){
       this.setState({
         errors: errors
-      })
+      });
     } else {
       this.setState({
         success: true
-      })
+      });
     }
   }
 
@@ -76,7 +74,7 @@ class App extends Component {
   resetErrors() {
     this.setState({
       errors: []
-    }, () => console.log(this.state.errors.length))
+    }, () => console.log(this.state.errors.length));
   }
 
   handleClose() {

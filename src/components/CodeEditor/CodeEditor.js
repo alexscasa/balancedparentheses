@@ -10,7 +10,7 @@ class CodeEditor extends React.Component {
     super(props);
     this.state = {
       code: '// type code here ...'
-    }
+    };
   }
   
   editorDidMount(editor, monaco) {
@@ -20,13 +20,13 @@ class CodeEditor extends React.Component {
   onChange(newValue, e) {
     this.setState({
         code: newValue
-    })
+    });
   }
 
   clearCode() {
       this.setState({
           code: '// type code here ...'
-      })
+      });
       this.props.resetErrors();
   }
   
