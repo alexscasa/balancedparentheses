@@ -1,0 +1,11 @@
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.results {
+    margin: 1em auto;
+    width: auto;
+    background-color: #403d3d;
+    color: #d14137;
+}
